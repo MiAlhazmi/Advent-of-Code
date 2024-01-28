@@ -6,15 +6,6 @@ line_length = 110
 directions = ["n", "s", "e", "w"]
 dir_movement = {"n": -line_length, "s": line_length, "e": 1, "w": -1, "ne": -line_length + 1, "nw": -line_length - 1, "se": line_length + 1, "sw": line_length - 1}
 beeper_exist_in = {}
-#current_dir = directions[2]
-
-# ToDo: make the robot a class  ->  done
-#kali_the_robot = {"pos": 0, "direction": directions[2]}
-
-##########################
-# this is a shitty code! #
-# Just learn from it     #
-##########################
 
 
 class KaliTheRobot:
@@ -227,7 +218,6 @@ def start(robot: KaliTheRobot):
     print("--------------------------------------------------------------\n")
 
 
-# Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     f = open("real.txt", "r")
     while True:
@@ -256,9 +246,3 @@ if __name__ == '__main__':
             energized_tiles += 1
 
     print(f"\n {energized_tiles}")
-
-    # for line in f:
-    #     for letter in line:
-    #         cave.insert(letter)
-    # # kali = KaliTheRobot(0, "e")
-    # print(cave)
